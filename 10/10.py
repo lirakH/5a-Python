@@ -73,7 +73,12 @@ class Rrethi(Forma):
     self.radius = radius
 
     def area(self):
-        retur 3.14*self.radius*self.radius
+        return 3.14*self.radius*self.radius
 
+class Katrori(Forma):
+    def __init__(self, brinje)
+    self.brinje = brinje
 
+    def area(self):
+        return brinje*brinje
 

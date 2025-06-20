@@ -15,7 +15,7 @@ class User(BaseModel):
   id: int
   name: str
   age: Optional[int] = 15
-  email: str
+  email: Optional[str] = None
 
 user1 = User(id=1, name="John Doe", age=15, email="john@gmail.com")
 user2 = User(id=2, name="Filan Fisteku", email="filan2002@gmail.com")

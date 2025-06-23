@@ -14,11 +14,21 @@ from typing import Optional
 class User(BaseModel):
   id: int
   name: str
-  age: Optional[int] = 15
-  email: Optional[str] = None
+  age: Optional[int]     #Optional Fields
+  email: Optional[str] = None #Default Values (None)
+  address: Optional[str] = "Ferizaj" #Default Values (Ferizaj)
 
-user1 = User(id=1, name="John Doe", age=15, email="john@gmail.com")
-user2 = User(id=2, name="Filan Fisteku", email="filan2002@gmail.com")
+user1 = User(id=1, name="John Doe", age=15, email="john@gmail.com", address="Prishtina")
+user2 = User(id=2, name="Filan Fisteku", age=100, email="filan2002@gmail.com")
 
 print(user1)
 print(user2)
+
+#Field Constraints 
+class another_user(BaseModel):
+  id: conint(gt=0) #id must be greater than 0
+  name: constr(min_length=2, max_length=20) # name length must be between 2 and 20
+
+valid_user = another_user(id=1, name="Shkolla")
+print(valid_user)
+

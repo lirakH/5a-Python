@@ -15,3 +15,10 @@ Next, we will implement the FastAPI backend, which will handle incoming POST req
 ● create_developer: This endpoint takes a Developer object as input and returns a success message along with the developer data. 
 ● create_project: This endpoint takes a Project object as input and returns a success message along with the project data. 
 ● get_projects: This is an additional GET endpoint that returns a list of projects. Here, we've added a sample project for demonstration purposes, but in a real application, you would fetch the project data from a database. 
+
+Finally, we create the user interface with Streamlit. This will include forms for users to input developer and project information, as well as a dashboard to display the projects: 
+● Developer Form: The user inputs a developer's name and experience. When the button is clicked, this data is sent to the FastAPI backend, and the response (including the developer data) is displayed. 
+● Project Form: The user inputs the project's title, description, languages used, and lead developer details. On clicking the button, this data is sent to the FastAPI backend, and the response is displayed. 
+● Display Projects in Dashboard: This section fetches and displays existing projects when the "Get Projects" button is clicked (in our case the sample_project). 
+● Projects Overview Table: A table displaying all the projects fetched from the backend. 
+● Project Details: Each project's details are shown in a structured format using Markdown, making it easy to read and understand the project's specifics. 

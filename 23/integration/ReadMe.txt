@@ -22,3 +22,8 @@ Finally, we create the user interface with Streamlit. This will include forms fo
 ● Display Projects in Dashboard: This section fetches and displays existing projects when the "Get Projects" button is clicked (in our case the sample_project). 
 ● Projects Overview Table: A table displaying all the projects fetched from the backend. 
 ● Project Details: Each project's details are shown in a structured format using Markdown, making it easy to read and understand the project's specifics. 
+
+
+To run the application, make sure: 
+● Start the FastAPI server: uvicorn main:app --reload 
+● Run the Streamlit app: streamlit run app.py 

@@ -27,3 +27,12 @@ Finally, we create the user interface with Streamlit. This will include forms fo
 To run the application, make sure: 
 ● Start the FastAPI server: uvicorn main:app --reload 
 ● Run the Streamlit app: streamlit run app.py 
+
+ose 
+
+(v2)
+● Start the FastAPI server: uvicorn main2:app --reload 
+● Run the Streamlit app: streamlit run app.py 
+
+Tek verzioni 2 e kam shtu nje memorie te perkohshme ne vend te databazes qe nuk e kemi akoma
+Tash mundemi me shtu projekte edhe kur i themi paraqiti projektet duhet me u paraqite edhe projekti qe e shtojme

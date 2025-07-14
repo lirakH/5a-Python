@@ -41,6 +41,36 @@ Extra after Install:
 - UPDATE users SET email = 'newtroll@gmail.com' WHERE id=1;
 - DELETE FROM users WHERE id=1;
 
+SQLite supports various data types, and it uses dynamic typing. Here are some of the primary data types: 
+● INTEGER: Used for storing whole numbers. 
+● TEXT: Used for storing text strings. 
+● BLOB: Used for storing binary data. 
+● REAL: Used for storing floating-point numbers. 
+● NUMERIC: Used for storing numbers that can be either integer or real. 
+
+Transactions
+Transactions in SQLite ensure that a series of SQL commands are executed as a single unit of work.
+● BEGIN: Starts a new transaction. 
+● COMMIT: Saves all changes made during the transaction. 
+● ROLLBACK: Undoes all changes made during the transaction if an error occurs. 
+
+#shembull:
+BEGIN;
+INSERT INTO users (name, email) VALUES ('deti', 'troll@gmail.com');
+INSERT INTO users (name, email) VALUES ('senadi', 'troll@gmail.com');
+INSERT INTO users (name, email) VALUES ('altuna', 'troll@gmail.com');
+COMMIT;
+
+ROLLBACK;
+
+Indexes and Constraints 
+Indexes and constraints help manage the integrity and performance of a database.
+● Unique: Ensures that all values in a column are unique. 
+● Primary Key: A unique identifier for each record in a table. Each table can have only one primary key. 
+● Foreign Key: A field (or collection of fields) in one table that uniquely identifies a row of another table. 
+
+
+
 
 
 

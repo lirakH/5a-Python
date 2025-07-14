@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS courses (
   )
   ''')
 
-cursor.execute("INSERT INTO students (name, email) VALUES ('filani', 'filani@gmail.com');")
+cursor.execute("INSERT INTO students (name, email) VALUES ('?', '?');", ("filan", "filan@gmail"))
 cursor.execute("INSERT INTO students (name, email) VALUES ('fisteku', 'fisteku@gmail.com');")
 
 cursor.execute("INSERT INTO courses (course_name, student_id) VALUES ('Math', 1)")

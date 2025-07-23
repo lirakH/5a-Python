@@ -1,7 +1,16 @@
-fastapi
-uvicorn
-pydantic
-python-dotenv
-requests
-streamlit
-pandas
+To run the application, make sure: 
+
+you have installed:
+pip install fastapi
+pip install uvicorn
+pip install pydantic
+pip install python-dotenv
+pip install requests
+pip install streamlit
+pip install pandas
+
+● Start the FastAPI server: uvicorn main:app --reload 
+
+make sure to change .env so it has the correct db name and correct api url
+
+● Run the Streamlit app: streamlit run app.py 

@@ -40,3 +40,9 @@ To ensure robust security, follow these best practices:
   ● Token Validation: The system validates the token to ensure it is authentic and has not expired. 
   ● Authorization Check: The system checks the user's roles or permissions against the access control policies to determine if the requested action is allowed. 
   ● Access Granted or Denied: Based on the authorization check, the system either grants or denies access to the resource.
+
+Requirments:
+  - fastapi
+  - uvicorn
+  - pydantic
+  - python-dotenv
